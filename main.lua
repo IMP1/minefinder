@@ -200,7 +200,7 @@ function reveal(i, j)
 	if flags[j][i] then return end
 	if mines[j][i] then 
         gameOver = true
-        boom = Animation.new( (i-1)*TileSize, (j-1)*TileSize, 0.1, "boom.png", 5, 2 )
+        boom = Animation.new( (i-1)*TileSize, (j-1)*TileSize, 0.1, "gfx/boom.png", 5, 2 )
         boom.offset.x = (192 - TileSize) / 2
         boom.offset.y = (192 - TileSize) / 2
         boom.loop = false
